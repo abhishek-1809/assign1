@@ -4,12 +4,11 @@ import com.oaes.evaluator.Evaluator;
 
 public class Main {
     public static void main(String[] args) {
-        FactoryProducer factoryProducer = null;
         ExamFactory factory;
         Evaluator evaluator;
 
         //for JEE
-        factory = factoryProducer.getExamFactory("JEE");
+        factory = new JEEFactory();
 
         evaluator = factory.createMCQEvaluator("MCQ");
         evaluator.evaluate("MCQ Rsponse");
@@ -25,7 +24,7 @@ public class Main {
 
 
         //for Gate
-        factory = factoryProducer.getExamFactory("GATE");
+        factory = new GATEFactory();
 
         evaluator = factory.createMCQEvaluator("MCQ");
         evaluator.evaluate("MCQ Rsponse");
