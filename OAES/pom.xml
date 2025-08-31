@@ -11,7 +11,7 @@
 
     <modules>
         <module>factorymethod</module>
-        <module>abstractfactorymethod</module>
+        <module>abstractfactory</module>
         <module>evaluator</module>
     </modules>
 
